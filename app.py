@@ -9,7 +9,7 @@ import requests
 url = 'https://raw.githubusercontent.com/Celinmi/Final-Project/main/volunteer_pool.csv' 
 Volunteer_pool = pd.read_csv(url)
 logo_url = 'https://raw.githubusercontent.com/Celinmi/Final-Project/main/ידידים - לוגו.jpg'
-back_ground_url = 'https://raw.githubusercontent.com/Celinmi/Final-Project/main/ידידים - רקע.jpeg'
+back_ground_url = 'https://raw.githubusercontent.com/Celinmi/Final-Project/main/ידידים - רקע.jpg'
 categories = ['הנעה', "פנצ'ר", 'רכב נעול', 'קורונה - קניית תרופות', 'דלת', 'אחר', 'שמן-מים-דלק', 'שינוע', 'קורונה - שינוע מזון', 'קורונה - קניית אוכל', 'חילוץ שטח']
 
 st.markdown(
