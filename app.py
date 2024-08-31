@@ -18,6 +18,7 @@ st.markdown(
     .main {{
         background-image: url("{back_ground_url}");
         background-size: 90vw 100vh;  # This sets the size to cover 100% of the viewport width and height 
+        background-position: center; 
         background-repeat: no-repeat;
     }}
     .stButton button {{
