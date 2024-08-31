@@ -18,9 +18,6 @@ st.markdown(
     .main {{
         background-image: url("{back_ground_url}");
         background-size: cover;
-        position: relative;
-        z-index: 1;
-        color: white;
     }}
     .stButton button {{
         background-color: rgba(255, 255, 255, 0.8);
