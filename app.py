@@ -59,7 +59,10 @@ st.markdown('<h1 class="title">"בחירת מתנדב אופטימלי"</h1>', u
 st.markdown('<h2 class="header">הזן פרטים לבחירת כונן</h2>', unsafe_allow_html=True)
 
 # קלטים מהמשתמש
-location = st.text_input("הכנס מיקום תקלה - קו אורך, קו רוחב לדוגמה 34.784 , 32.085")
+location = st.text_input("הכנס מיקום תקלה - קו אורך, קו רוחב לפי הטווחים הבאים:
+קו רוחב בטווח : 29.5 עד 33.3
+קו ארוך בטווח: 34.2 עד 35.8")
+
 caller_id = st.text_input("הכנס מזהה ייחודי של הפונה - שם פרטי ו 4 ספרות אחרונות של ת.ז")
 category = st.selectbox("בחר קטגוריה של התקלה", categories)
 
