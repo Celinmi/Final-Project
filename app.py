@@ -16,7 +16,7 @@ st.title("בחירת מתנדב אופטימלי")
 st.subheader("הזן פרטים לבחירת כונן")
 
 # קלטים מהמשתמש
-location = st.text_input("הכנס מיקום תקלה (לדוגמה: 32.0853, 34.7818)")
+location = st.text_input("הכנס מיקום תקלה")
 caller_id = st.text_input("הכנס מזהה ייחודי של הפונה")
 category = st.selectbox("בחר קטגוריה של התקלה", categories)
 
