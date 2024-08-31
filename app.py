@@ -8,12 +8,56 @@ import requests
 # טוען את קובץ ה-CSV מ-GitHub
 url = 'https://raw.githubusercontent.com/Celinmi/Final-Project/main/volunteer_pool.csv' 
 Volunteer_pool = pd.read_csv(url)
-
+logo_url = 'https://raw.githubusercontent.com/Celinmi/Final-Project/main/ידידים - לוגו.jpg'
+back_ground_url = 'https://raw.githubusercontent.com/Celinmi/Final-Project/main/ידידים - רקע.jpeg'
 categories = ['הנעה', "פנצ'ר", 'רכב נעול', 'קורונה - קניית תרופות', 'דלת', 'אחר', 'שמן-מים-דלק', 'שינוע', 'קורונה - שינוע מזון', 'קורונה - קניית אוכל', 'חילוץ שטח']
 
-st.title("בחירת מתנדב אופטימלי")
+st.markdown(
+    f"""
+    <style>
+    .main {{
+        background-image: url("{back_ground_url}");
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        color: white;
+    }}
+    .stButton button {{
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        border-radius: 12px;
+    }}
+    .stTextInput, .stNumberInput input {{
+        color: black;
+    }}
+    .title {{
+        background-color: rgba(255, 255, 255, 0.8); /* רקע בהיר */
+        color: black !important;
+        padding: 10px;
+        border-radius: 10px;
+    }}
+    .header {{
+        background-color: rgba(255, 255, 255, 0.8); /* רקע בהיר */
+        color: black !important;
+        padding: 5px;
+        border-radius: 5px;
+    }}
+    .css-10trblm, .css-1v3fvcr p {{
+        color: white !important;
+    }}
+    .stTitle, .stHeader, .stSubheader, .stMarkdown, .stText, .stNumberInput label, .stDateInput label {{
+        color: white !important;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-st.subheader("הזן פרטים לבחירת כונן")
+st.image(logo_url, width=200)
+
+st.markdown('<h1 class="title">"בחירת מתנדב אופטימלי"</h1>', unsafe_allow_html=True)
+
+st.markdown('<h2 class="header">הזן פרטים לבחירת כונן</h2>', unsafe_allow_html=True)
 
 # קלטים מהמשתמש
 location = st.text_input("הכנס מיקום תקלה - קו אורך, קו רוחב לדוגמה 34.784 , 32.085")
