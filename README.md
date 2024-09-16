@@ -1,4 +1,4 @@
-# Final-Project
+# Final-Project : Volunteer Assignment Optimization for "Yedidim"
 
 This project aims to optimize the process of assigning volunteers to roadside assistance requests at the "Yedidim" organization, a non-profit that provides non-medical emergency help throughout Israel. The system uses a combination of data-driven methods, including the Hungarian algorithm, to automatically assign the most suitable volunteer based on factors such as geographical proximity, past performance, and availability. This will result in faster response times, higher satisfaction rates, and overall improved efficiency for the organization.
 
